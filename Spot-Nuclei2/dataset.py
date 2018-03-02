@@ -49,8 +49,8 @@ class NucleiDataset(utils.Dataset):
         """
         image = imageio.imread(self.image_info[image_id]['path'])
         # RGBA to RGB
-        if image.shape[2] != 3:
-            image = image[:,:,:3]
+        #if image.shape[2] != 3:
+        #    image = image[:,:,:3]
         return image
     
     def image_reference(self, image_id):
